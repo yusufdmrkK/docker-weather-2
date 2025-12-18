@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Hava Durumu | Favori Şehirler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="page">
+
+<div class="container">
+    <h1>🌍 Hava Durumu Paneli</h1>
+
+    <div class="search">
+        <input id="cityInput" placeholder="Şehir adı (İstanbul)">
+        <button onclick="getWeather()">Getir</button>
+    </div>
+
+    <div id="weatherCard" class="weather-card hidden">
+        <div id="icon" class="icon">☀️</div>
+        <h2 id="cityName"></h2>
+        <p id="temp"></p>
+        <p id="wind"></p>
+        <button onclick="addFavorite()">⭐ Favorilere Ekle</button>
+    </div>
+
+    <h3>⭐ Favori Şehirler</h3>
+    <ul id="favoritesList"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
